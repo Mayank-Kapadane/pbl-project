@@ -10,13 +10,13 @@ def Home():
 def login():
     return render_template("login.html")
 
-@app.route("/Rgister")
+@app.route("/Register")
 def register():
     return render_template("register.html")
 
-@app.route("/temp")
-def temp():
-    return render_template("temp.html")
+# @app.route("/temp")
+# def temp():
+#     return render_template("temp.html")
 
 
 @app.route("/flower")
@@ -26,6 +26,10 @@ def flower():
 @app.route("/chatbot")
 def chatbot():
     return render_template("chatbot.html")
+
+@app.route("/Agriculture-products")
+def product():
+    return render_template("product.html")
 
 
 @app.errorhandler(404)

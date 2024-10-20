@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "header.html" %}
+</head>
+<body>
+    
+    
+    {% include "navbar.html" %}
+
+
+    <div class="container mt-5">
+        <h2 class="text-center">Our Agriculture Products</h2>
+        <div class="row">
+            <!-- Product Card Example -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/img/product1.png') }}">
+                    <div class="p-3">
+                        <h5 class="product-title">Organic Seeds</h5>
+                        <p class="product-price">$10.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for more products -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/img/product2.png') }}">
+                    <div class="p-3">
+                        <h5 class="product-title">Fertilizer</h5>
+                        <p class="product-price">$15.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/img/product3.png') }}">
+
+                    <div class="p-3">
+                        <h5 class="product-title">Pesticides</h5>
+                        <p class="product-price">$20.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                   
+                    <img src="{{ url_for('static', filename='images/img/product4.png') }}">
+
+                    <div class="p-3">
+                        <h5 class="product-title">Gardening Tools</h5>
+                        <p class="product-price">$25.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    
+                    <img src="{{ url_for('static', filename='images/img/product4.png') }}">
+
+                    <div class="p-3">
+                        <h5 class="product-title">Gardening Tools</h5>
+                        <p class="product-price">$30.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                  
+                    <img src="{{ url_for('static', filename='images/img/product5.png') }}">
+
+                    <div class="p-3">
+                        <h5 class="product-title">Gardening Tools</h5>
+                        <p class="product-price">$10.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                   
+                    <img src="{{ url_for('static', filename='images/img/product6.png') }}">
+
+                    <div class="p-3">
+                        <h5 class="product-title">Gardening Tools</h5>
+                        <p class="product-price">$25.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                   
+                    <img src="{{ url_for('static', filename='images/img/product7.png') }}">
+
+                    <div class="p-3">
+                        <h5 class="product-title">Gardening Tools</h5>
+                        <p class="product-price">$25.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+           
+    </div>
+
+    {% include "footer.html" %}
+    
+    {% include "cdn.html" %}
+
+</body>
+</html>

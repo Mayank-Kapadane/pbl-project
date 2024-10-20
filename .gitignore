@@ -3,6 +3,7 @@ Library
 
 # Files
 task.md
+.env
 
 # Folders
 spinner
