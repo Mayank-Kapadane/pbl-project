@@ -1,13 +1,507 @@
-*{
-    margin : 0px;
-    padding : 0px;
-    box-sizing : border-box;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-html,body{
+html,
+body {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-h1{
-    color : red;
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+
+    --first-color: #1da04e;
+    --second-color: #fff;
 }
+/* custom css */
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--second-color);
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    /* color: var(--second-color); */
+    line-height: 3rem;
+}
+
+h4 {
+    text-transform: capitalize;
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    text-transform: capitalize;
+    color: var(--second-color);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 0.5rem;
+}
+
+p {
+    color: var(--second-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+/* Navbar styles */
+#logo {
+    width: 2.25rem;
+    height: 1.6875rem;
+    cursor: pointer;
+}
+
+nav {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+@media screen and (max-width: 991px) {
+    #logo {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* Hero section style */
+#hero {
+    background-image: url("../images/background/bg.png");
+
+    /* Here the css file linked with the static folder that's why we don't need to specify path  using url_for()  */
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* About section */
+.about-section {
+    background-color: #f4f4f4; /* Light background color */
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Center align text */
+}
+
+.about-title {
+    font-size: 2.5rem; /* Large title font size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark text color */
+}
+
+.about-description {
+    font-size: 1.2rem; /* Standard font size for description */
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.5; /* Increase line height for readability */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center alignment */
+}
+
+/* Chat section */
+
+.chatbot-section {
+    background-color: #ffffff; /* White background for the chatbot */
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Center align text */
+}
+
+.chatbot-title {
+    font-size: 2.5rem; /* Large title font size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark text color */
+}
+
+.chatbot-interface {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.chatbot-window {
+    border: 1px solid #ccc; /* Border for the chat window */
+    height: 664px; /* Fixed height for the chat window */
+    width: 26%; /* Full width */
+    max-width: 600px; /* Limit width for better readability */
+    padding: 10px; /* Padding inside the chat window */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background-color: #f9f9f9; /* Light background color */
+    margin-bottom: 20px; /* Space below the chat window */
+    background-image: url("../images/background/chatbot.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* object-fit: fill; */
+}
+
+.chatbot-input {
+    width: 80%; /* Input width */
+    padding: 10px; /* Padding for input */
+    margin-right: 10px; /* Space between input and button */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.chatbot-btn {
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    background-color: #4caf50; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.chatbot-btn:hover {
+    background-color: #45a049; /* Darken button on hover */
+}
+
+/* flower section */
+.flower-scanner-section {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Center align text */
+}
+
+.flower-scanner-title {
+    font-size: 2.5rem; /* Large title font size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark text color */
+}
+
+.flower-scanner-description {
+    font-size: 1.2rem; /* Standard font size for description */
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.5; /* Increase line height for readability */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center alignment */
+}
+
+.flower-input {
+    margin: 20px 0; /* Space above and below input */
+}
+
+.flower-btn {
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    background-color: #4caf50; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.flower-btn:hover {
+    background-color: #45a049; /* Darken button on hover */
+}
+
+.flower-result {
+    margin-top: 20px; /* Space above result */
+    font-size: 1.2rem; /* Font size for the result */
+    color: #333; /* Dark text color */
+}
+
+/* Footer section */
+.footer-section {
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for the footer */
+    text-align: center; /* Center align text */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center alignment */
+}
+
+.footer-links {
+    margin-top: 10px; /* Space above links */
+}
+
+.footer-links a {
+    color: #fff; /* White link color */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* 
+===========================
+spinner 
+===========================
+*/
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-screen h1 {
+    font-size: 100px;
+    color: var(--first-color);
+}
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 
+==================================
+FLower page
+==================================
+ */
+
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    height: 500px;
+}
+.row .col-8 h2 {
+    color: black !important;
+}
+#drop-area.highlight {
+    border-color: purple;
+}
+
+/* 
+---------------
+Chatbot
+---------------
+*/
+
+/* style.css */
+
+.chat-container {
+    max-width: 800px;
+    margin: 48px auto;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.chat-container #chatbox {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chat-container .chat-log {
+    margin-bottom: 10px;
+}
+
+.chat-container .message {
+    margin: 5px 0;
+}
+
+.chat-container .message.user {
+    text-align: right;
+}
+
+.chat-container .message.bot {
+    text-align: left;
+    color: #444;
+}
+
+.chat-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.chat-container button {
+    width: 70px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 88.5%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* contact us  */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-right: 100%;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.response-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.carousel-item img{
+    object-fit: cover;
+}
+

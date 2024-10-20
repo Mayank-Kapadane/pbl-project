@@ -1,8 +1,12 @@
+# Library for local (offline situation) 
+Library
+
 # Files
 task.md
 
 # Folders
 spinner
+.vscode
 
 # python virtual env
 myenv

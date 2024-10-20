@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: forestgreen;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #dc3545 !important; /* Bootstrap danger color */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color : black !important;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
