@@ -113,7 +113,7 @@ imageInput.addEventListener("change", function (event) {
     }
 
     if (!food_found) {
-        title.textContent = "Looks like it is not Food!"
+        title.textContent = "Looks like, it is not Food!"
         let li = document.createElement("li");
         li.textContent = `Image not recognize.`;
         disease_section.appendChild(li);
