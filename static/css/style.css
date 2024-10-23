@@ -619,3 +619,8 @@ Chatbot
     background-color : #1da04e;
     border : 2px solid white
 }
+
+#result .row{
+    display: flex;
+    flex-direction: row;;
+}

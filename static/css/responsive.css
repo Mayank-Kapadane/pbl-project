@@ -53,5 +53,35 @@
     #drop-area{
         height: 200px;
     }
+
+    #result .row{
+        display: flex;
+        
+        flex-direction: column;
+        margin : 0px
+    }
+    #result .row h3{
+        align-self: flex-start;
+    }
+
+    #result-title{
+        width : 330px
+    }
+    .disease-name li{
+        width : 100%
+    }
+
+    .rc7{
+        width : 100%
+    }
+
+    #imagePreview{
+        width : 350px;
+        height : 200px;
+    }
+
+    #searchAgain{
+        margin-top : 20px
+    }
 }
 

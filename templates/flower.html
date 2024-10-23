@@ -45,11 +45,12 @@
     <div class="row">
 
         <h3 id="result-title" >Potato</h3>
-        <div class="col-7">
+        <div class="col-7 rc7">
             <ul class="custom-list">
                 <section class="disease-section">
 
                     <li class="disease-name">
+                          
                            
                     </li>
                    
@@ -59,8 +60,8 @@
         </div>
         <div class="col-5">
 
-            <!-- <img id="imagePreview" src="" alt="Image Preview" style="max-width: 300px; display:none;"> -->
-            <img  id="imagePreview"  src="{{ url_for('static', filename='images/Agriculture-images/potato.jpg') }}" alt="">
+            <img id="imagePreview" src="" alt="Image Preview" style="max-width: 300px; display:none;">
+            <!-- <img  id="imagePreview"  src="{{ url_for('static', filename='images/Agriculture-images/potato.jpg') }}" alt=""> -->
         </div>
             
     </div>
@@ -69,7 +70,6 @@
 <div id="searchAgain" class="container d-none">
     Do you want to search another image <button class="btn btn2 btn-success">click</button> here
 </div>
-
 
 <!-- 
 <div class=" carousel container mb-3">
@@ -105,7 +105,7 @@
         </button>
     </div>
     
-</div> -->
+</div>  -->
     
     {% include "cdn.html" %}
   <script src="{{ url_for('static', filename='js/flower.js') }}"></script>
