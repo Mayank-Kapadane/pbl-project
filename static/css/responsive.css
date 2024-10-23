@@ -1,0 +1,57 @@
+/* Tablet screen */
+@media screen and (max-width: 991px) {
+    #logo {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #carousel .row{
+        display: flex;
+        align-items: space-between;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #carousel .row img{
+        position : relative;
+        left : 70%;
+        margin-bottom : 25px;
+    }
+
+    .c7{
+        width : 100%
+    }
+}
+
+/* Mobile screen */
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .btn {
+        padding: 8px 16px;
+    }
+    .chatbot-window {
+        width: 102%;
+    }
+
+    #loading-screen h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+    #carousel .row img{
+        left : 20px;
+    }
+    #carousel .c7{
+        width : 100% !important
+    }
+    #carousel .c7 h2{
+        font-size : 1.6rem;
+        text-align: center;
+        margin-top :20px
+    }
+    #drop-area{
+        height: 200px;
+    }
+}
+

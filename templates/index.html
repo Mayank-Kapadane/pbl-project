@@ -7,7 +7,7 @@
 
 <body>
   <div id="loading-screen" class="loading-screen">
-    <h1>Getting Started...</h1>
+    <h1>Getting Started</h1>
   </div>
   
 
@@ -65,7 +65,7 @@
           Upload a photo of a flower to identify its species and learn more about how to care for it.
         </p>
         <a href="/flower">
-        <button id="scanBtn" class="flower-btn">
+        <button id="scanBtn" class="flower-btn mt-4">
 
           Scan Flower
         </button>
@@ -120,6 +120,8 @@
 
 
   {% include "cdn.html" %}
+  <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+
 
 
 </body>

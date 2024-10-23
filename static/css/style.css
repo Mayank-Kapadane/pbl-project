@@ -76,13 +76,6 @@ nav {
     border: none;
 }
 
-@media screen and (max-width: 991px) {
-    #logo {
-        width: 2rem;
-        height: 2rem;
-    }
-}
-
 /* Hero section style */
 #hero {
     background-image: url("../images/background/bg.png");
@@ -146,15 +139,6 @@ nav {
     color: white;
     border: 2px solid white;
     margin-left: 10px;
-}
-
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-    .btn {
-        padding: 8px 16px;
-    }
 }
 
 @keyframes fadeIn {
@@ -287,11 +271,78 @@ nav {
     color: #333; /* Dark text color */
 }
 
+
+#imagePreview{
+    /* margin-left: 62.5%; */
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 17px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    object-fit: cover;
+
+}
+
+/* flower result  */
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.container  li a{
+    color : #1da04e;
+    text-decoration: none;
+}
+
+.container h3{ 
+    background-color: rgba(255, 228, 196, 0.643);
+    color : #1da04e;
+    text-align: center;        /* Remove default padding */
+    /* text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15); */
+    font-style: italic;
+    font-weight: 500px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    border-radius: 15px;
+    border : 3px solid #218838;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width :95%;
+    position : relative ;
+    left : 40px;
+}
+.custom-list li {
+    position: relative;    /* Set position for the pseudo-element */
+    padding-left: 25px;   /* Add space for the icon */
+    line-height: 2rem;
+    font-size: 20px;
+    margin-left: 45px;
+}
+.custom-list span{
+
+    
+    font-weight: bolder;
+}
+
+.custom-list section {
+    margin-top : 20px
+}
+
+.custom-list li:before {
+    content: "\e139"; /* Font Awesome icon code (check mark icon as an example) */
+    font-family: "Font Awesome 5 Free"; /* Specify Font Awesome family */
+    font-weight: 900; /* Use the solid style */
+    position: absolute; /* Position the icon */
+    left: -6px;          /* Align left */
+    top: 0;           /* Align top */
+    font-size: 1.2em; /* Adjust size if needed */
+    color: #63E6BE;   
+    font-size : 18px
+}
+
 /* Footer section */
 .footer-section {
     background-color: #333; /* Dark background for footer */
     color: white; /* White text color */
-    padding: 20px 0; /* Padding for the footer */
+     padding: 20px 0; /*Padding for the footer */
     text-align: center; /* Center align text */
 }
 
@@ -312,6 +363,12 @@ nav {
 
 .footer-links a:hover {
     text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top : 20px
 }
 
 /* 
@@ -382,13 +439,21 @@ FLower page
     border-color: purple;
 }
 
+#carousel .row img {
+    position: static;
+}
+
+.btn2{
+  font-size: 16px;
+  width: 55px;
+  padding: 0px;
+}
+
 /* 
 ---------------
 Chatbot
 ---------------
 */
-
-/* style.css */
 
 .chat-container {
     max-width: 800px;
@@ -424,22 +489,22 @@ Chatbot
 }
 
 .chat-container input {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
 }
 
 .chat-container button {
-    width: 70px;
-    padding: 10px;
+    width: 77px;
+    padding: 10px 20px;
     background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
-    margin-left: 88.5%;
-    border-top-right-radius: 50px;
+    margin-left: 90.2%;
+    border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
@@ -501,11 +566,9 @@ Chatbot
     font-weight: bold;
 }
 
-.carousel-item img{
+.carousel-item img {
     object-fit: cover;
 }
-
-
 
 /* products */
 
@@ -528,6 +591,18 @@ Chatbot
     color: #28a745;
     font-size: 1.1rem;
 }
-.product-card img{
+.product-card img {
     object-fit: contain;
+}
+
+.btn{
+
+    transition: all 2s ease ;
+}
+
+.btn:hover{
+    background-color: white;
+    border : 2px solid #1da04e;
+    color : #1da04e;
+    border-radius: 0px;
 }

@@ -14,9 +14,9 @@ def login():
 def register():
     return render_template("register.html")
 
-# @app.route("/temp")
-# def temp():
-#     return render_template("temp.html")
+@app.route("/temp")
+def temp():
+    return render_template("temp.html")
 
 
 @app.route("/flower")

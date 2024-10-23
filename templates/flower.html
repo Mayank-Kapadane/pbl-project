@@ -17,21 +17,19 @@
         <div class="col-5">
             <img src="{{ url_for('static', filename='/images/background/flower.png')}}" alt="">
         </div>
-        <div class="col-7">
+        <div class="col-7 c7 ">
 
-            <h2>Drag and Drop Image here</h2>
             <div id="drop-area">
                 <p>Drag and drop an image here, or click to select one</p>
                 <input type="file" id="fileElem" accept="image/*" style="display:none">
                 <label for="fileElem" class="btn btn-primary">Select Image</label>
                 <div id="file-info" class="mt-2"></div>
             </div>
-            <div id="result" class="alert alert-info" style="display:none;"></div>
         </div>
     </div>
 </div>
 
-    <ul class="container">
+    <ul class="container mt-5">
         <li class="ms-4">We will send the information regarding this image in your mail</li>
         <li class="ms-4">if you're not logged yet please 
             <a href="/login">
@@ -43,13 +41,37 @@
 
 
 
+<div id="result" class="container mt-5 d-none">
+    <div class="row">
+
+        <h3 id="result-title" >Potato</h3>
+        <div class="col-7">
+            <ul class="custom-list">
+                <section class="disease-section">
+
+                    <li class="disease-name">
+                           
+                    </li>
+                   
+
+                </section>
+                </ul>
+        </div>
+        <div class="col-5">
+
+            <!-- <img id="imagePreview" src="" alt="Image Preview" style="max-width: 300px; display:none;"> -->
+            <img  id="imagePreview"  src="{{ url_for('static', filename='images/Agriculture-images/potato.jpg') }}" alt="">
+        </div>
+            
+    </div>
+</div>
+
+<div id="searchAgain" class="container d-none">
+    Do you want to search another image <button class="btn btn2 btn-success">click</button> here
+</div>
 
 
-
-
-
-
-
+<!-- 
 <div class=" carousel container mb-3">
 
     
@@ -83,9 +105,11 @@
         </button>
     </div>
     
-</div>
+</div> -->
     
     {% include "cdn.html" %}
+  <script src="{{ url_for('static', filename='js/flower.js') }}"></script>
+
     
     {% include "footer.html" %}
 </body>
