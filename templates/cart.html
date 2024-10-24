@@ -9,6 +9,59 @@
     {% include "navbar.html" %}
 
 
+
+
+
+
+
+
+
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seed Starter Kit</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$20.00</td>
+                    <td>$20.00</td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr>
+                    <td>AI Soil Moisture Sensor</td>
+                    <td><input type="number" value="2" min="1"></td>
+                    <td>$45.00</td>
+                    <td>$90.00</td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <!-- Add more items here -->
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Subtotal: $110.00</p>
+            <p>Shipping: $10.00</p>
+            <p>Total: $120.00</p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
     {% include "footer.html" %}
     
     {% include "cdn.html" %}

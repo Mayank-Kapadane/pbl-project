@@ -10,7 +10,7 @@ def Home():
 def login():
     return render_template("login.html")
 
-@app.route("/Register")
+@app.route("/register")
 def register():
     return render_template("register.html")
 
@@ -27,9 +27,13 @@ def flower():
 def chatbot():
     return render_template("chatbot.html")
 
-@app.route("/Agriculture-products")
+@app.route("/agriculture-products")
 def product():
     return render_template("product.html")
+
+@app.route("/cart")
+def cart():
+    return render_template("cart.html")
 
 
 @app.errorhandler(404)
