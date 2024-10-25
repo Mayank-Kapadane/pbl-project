@@ -17,6 +17,10 @@ navbar.forEach(function (a){
 
 
 
+let contact_button = document.getElementById('response-message');
+let text = document.getElementById('acknowledgement');
 
 
-
+contact_button.addEventListener('click', () =>{
+    text.classList.remove("d-none")
+})

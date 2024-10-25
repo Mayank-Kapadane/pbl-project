@@ -27,6 +27,18 @@ class User(db.Model):
 
     def checkPassword(self,password):
         return bcrypt.checkpw(password.encode('utf-8'), self.password.encode('utf-8'))
+    
+class Contact(db.Model):
+    __tablename__ = 'contact'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(120), nullable=False)
+    message = db.Column(db.Text, nullable=False)
+
+    def __init__(self, name, email, message):
+        self.name = name
+        self.email = email
+        self.message = message
 
 with app.app_context():
     db.create_all()
@@ -104,9 +116,17 @@ def cart():
 @app.route('/contact', methods=['GET','POST'])
 def contact():
     if request.method == 'POST':
-        pass
+        contact_name = request.form.get('name')
+        contact_email = request.form.get('email')
+        contact_message = request.form.get('message')
 
-    return render_template("contact.html")
+        new_record = Contact(contact_name,contact_email,contact_message)
+        db.session.add(new_record)
+        db.session.commit()
+
+        return render_template("contact.html")
+    else :
+        return render_template("contact.html")
 
 
 @app.route("/account")
