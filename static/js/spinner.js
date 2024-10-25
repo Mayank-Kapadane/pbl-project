@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
-        }, 5000); // Adjust the duration as needed
+        }, 7000); // Adjust the duration as needed
 
         // Show spinner when navigating to other pages
     }

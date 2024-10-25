@@ -83,5 +83,19 @@
     #searchAgain{
         margin-top : 20px
     }
+    .chat-container{
+        max-width: 400px;
+    }
+    .chat-container button{
+        margin-left: 79.2%;
+    }
+
+    .navbar{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #account{
+        font-size : 2rem
+    }
 }
 
