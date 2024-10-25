@@ -148,7 +148,7 @@ imageInput.addEventListener("change", function (event) {
 
 
     // Some another setup
-    carousel.classList.add('d-none');
+    // carousel.classList.add('d-none');
     searchAgain.classList.remove('d-none');
 
 
