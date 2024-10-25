@@ -709,3 +709,17 @@ Chatbot
 }
 
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+/* background of scrollbar */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Scrollbar color */
+::-webkit-scrollbar-thumb {
+    background:#1da04e;
+}
