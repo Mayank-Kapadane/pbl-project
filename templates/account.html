@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "header.html" %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+
+</head>
+<body>
+    
+    
+    {% include "navbar.html" %}
+
+
+        <div class="account-container w-50">
+            <h1>User Account</h1>
+            <div class="user-info ">
+                <h2>User Name :</h2>
+                <p>{{ user.username }}</p>
+            </div>
+            <div class="user-info ">
+                <h2>Email :</h2>
+                <p>{{ user.email }}</p>
+            </div>
+            <a href="/logout" class="btn btn-success">Log out </a>
+        </div>
+    
+    {% include "cdn.html" %}
+
+</body>
+</html>

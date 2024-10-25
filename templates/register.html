@@ -12,9 +12,9 @@
 
 
 <section class="register">
-    <div class="container">
-        <h2>Register for Agriculture with AI</h2>
-        <form id="registerForm" onsubmit="return validateRegisterForm()">
+    <div class="container w-50 ">
+        <h2>Register for Agro Guardian</h2>
+        <form action="/register" method="post" id="registerForm" autocomplete="off" onsubmit="return validateRegisterForm()">
             <div class="input-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -27,12 +27,10 @@
                 <label for="password">Password:</label>
                 <input type="password" id="registerPassword" name="password" required>
             </div>
-            <div class="input-group">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-            </div>
-            <button type="submit">Register</button>
-            <p style="color : black">Already have an account? <a href="/login">Login Here</a></p>
+        
+
+                <button class="" type="submit">Register</button>
+                <p style="color : black">Already have an account? <a href="/login">Login Here</a></p>
         </form>
     </div>
 

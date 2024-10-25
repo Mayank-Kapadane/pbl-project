@@ -97,10 +97,13 @@ html,body{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     width: 400px;
     text-align: center;
+
+    position: relative;
+    top : 50px;
 }
 
 .register h2 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: #333;
 }
 
@@ -146,6 +149,7 @@ html,body{
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
+    margin-right : 600px
 }
 
 .register button:hover {
@@ -156,6 +160,7 @@ html,body{
 /* Link styles */
 .register p {
     margin-top: 10px;
+    margin-right: 313px;
 }
 
 .register a {
@@ -166,4 +171,54 @@ html,body{
 
 .register a:hover {
     text-decoration: underline;
+}
+
+
+/* Account  */
+
+
+.account-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin : 50px auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #3c763d;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    margin-bottom: 15px;
+}
+
+.user-info h2 {
+    font-size: 18px;
+    color: #5b8a3c;
+    margin-bottom: 5px;
+}
+
+.user-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+.account-container h2, .account-container p{
+    color : #28a745
+}
+
+.account-container .user-info{
+    display: flex;
+}
+
+.account-container .user-info p{
+    position: relative;
+    top : 10px;
+    left : 5px;
+
 }

@@ -39,3 +39,5 @@ conn = create_connection(host, user, password, database)
 
 
 
+def register_user():
+    print("hello")

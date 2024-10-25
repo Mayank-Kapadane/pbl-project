@@ -384,41 +384,47 @@ spinner
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 9999;
+    margin-left : 20%;
 }
 
 .loading-screen h1 {
-    font-size: 100px;
+    font-size: 35px;
     color: var(--first-color);
+    text-align: center;
 }
 
-.spinner {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border: 8px solid rgba(0, 0, 0, 0.1);
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    transform: translate(-50%, -50%);
+.loading-screen ul{
+    padding:  0px;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.loading-screen ul li{
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.loading-screen ul li:before {
+    content: "\e139"; /* Font Awesome icon code (check mark icon as an example) */
+    font-family: "Font Awesome 5 Free"; /* Specify Font Awesome family */
+    font-weight: 900; /* Use the solid style */
+    
+    font-size: 1.2em; /* Adjust size if needed */
+    color: #63E6BE;   
+    font-size : 18px;
+    position :relative;
+    right : 7px;
+}
+
 
 /* 
 ==================================
@@ -528,6 +534,10 @@ Chatbot
     margin-bottom: 30px;
     font-size: 1rem;
     color: #555;
+}
+
+.contact-section .container{
+    max-width: 900px;
 }
 
 .form-group {
