@@ -9,6 +9,7 @@ learn.md
 # Folders
 spinner
 .vscode
+__pycache__
 
 # python virtual env
 myenv

@@ -99,3 +99,52 @@
     }
 }
 
+/* Loading screen shows in starting */
+/* Mobile screen styles for loading screen *//* Mobile screen styles for loading screen */
+@media screen and (max-width: 768px) {
+    .cotainer {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #loading-screen {
+        width: 100%;
+        height: auto;
+        max-height: 90vh;
+        padding: 20px;
+        margin: 0;
+        overflow-y: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #loading-screen h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    #loading-screen ul {
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    #loading-screen li {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+
+    #loading-screen .spinner-border {
+        width: 2rem;
+        height: 2rem;
+        margin: 10px auto;
+    }
+}

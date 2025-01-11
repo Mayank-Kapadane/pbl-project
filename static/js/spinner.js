@@ -1,7 +1,7 @@
 let visited = localStorage.getItem("hasVisited");
 const loadingScreen = document.getElementById("loading-screen");
 const mainContent = document.getElementById("main-content");
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
     if (visited == "yes") {
         loadingScreen.style.display = "none";
@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show loading screen on homepage
         localStorage.setItem("hasVisited", "yes");
         setTimeout(() => {
+
+    
             loadingScreen.style.display = "none";
             mainContent.style.display = "block";
         }, 7000); // Adjust the duration as needed
@@ -17,3 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show spinner when navigating to other pages
     }
 });
+*/

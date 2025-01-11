@@ -1,8 +1,7 @@
-
 *{
     margin : 0px;
     padding : 0px;
-    box-sizing : border-box;
+    box-sizing : border-box; 
 }
 
 html,body{
@@ -222,3 +221,121 @@ h1 {
     left : 5px;
 
 }
+
+@media screen and (max-width: 768px) {
+    .log-in .container {
+        width: 90% !important;
+        margin: 0 auto;
+        padding: 15px;
+        top: 50px;
+    }
+
+    .log-in h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .log-in .input-group {
+        margin-bottom: 12px;
+    }
+
+    .log-in .input-group label {
+        font-size: 0.9rem;
+    }
+
+    .log-in .input-group input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .log-in button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .log-in p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+/* Mobile screen styles for register */
+@media screen and (max-width: 768px) {
+    .register .container {
+        width: 90% !important;
+        margin: 0 auto;
+        padding: 20px;
+        top: 30px;
+    }
+
+    .register h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .register .input-group {
+        margin-bottom: 15px;
+    }
+
+    .register .input-group label {
+        font-size: 0.9rem;
+    }
+
+    .register .input-group input {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .register button {
+        width: 100%;
+        margin-right: 0;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .register p {
+        margin-top: 10px;
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Mobile screen styles for loading screen */
+@media screen and (max-width: 768px) {
+    .cotainer {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    #loading-screen {
+        padding: 20px;
+    }
+
+    #loading-screen h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        text-align: left;
+        line-height: 1.4;
+    }
+
+    #loading-screen ul {
+        padding-left: 15px;
+    }
+
+    #loading-screen li {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+
+    #loading-screen .spinner-border {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 20px;
+    }
+}
+
+
